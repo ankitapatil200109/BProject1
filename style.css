@@ -1,0 +1,126 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    /* Light grey background */
+}
+
+.hero {
+    position: relative;
+    height: 100vh;
+    background-image: url('imges/about-bg.jpg');
+    /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 50px;
+    /* Add some padding */
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Semi-transparent overlay */
+}
+
+.hero>* {
+    position: relative;
+    z-index: 1;
+    /* Ensure content is above overlay */
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.hero .btn {
+    margin-right: 10px;
+}
+
+.navbar {
+    background-color: transparent !important;
+    /* Make navbar transparent */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    /* Ensure navbar is above hero content */
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+    /* Navbar links white */
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #ccc;
+    /* Lighter color on hover */
+}
+
+.navbar-brand {
+    color: white !important;
+    /* Brand name white */
+    font-weight: bold;
+}
+
+/* second -part */
+.image-area {
+    padding: 10px;
+
+}
+
+.text-area {
+    padding: 10px;
+
+}
+
+.list-item {
+    display: flex;
+
+    align-items: center;
+
+    margin-bottom: 10px;
+}
+
+
+.list-item img {
+    width: 20px;
+
+    height: 20px;
+    margin-right: 10px;
+    /* Add spacing between icon and text */
+}
+
+/* Optional: Add more styling as per your design */
+body {
+    font-family: sans-serif;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+/* second -part */
